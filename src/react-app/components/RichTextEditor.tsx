@@ -277,7 +277,7 @@ export default function RichTextEditor({
                 <div className="mb-4">
                   <p className="text-xs text-slate-500 mb-2">Arrows</p>
                   <div className="flex flex-wrap gap-1">
-                    {['\\rightarrow', '\\leftarrow', '\\leftrightarrow', '\\Rightarrow', '\\Leftarrow', '\\Leftrightarrow', '\\uparrow', '\\downarrow'].map((symbol) => (
+                    {['->', '\\<-', '\\leftrightarrow', '\\Rightarrow', '\\Leftarrow', '\\Leftrightarrow', '\\uparrow', '\\downarrow'].map((symbol) => (
                       <button
                         key={symbol}
                         onClick={() => setEquation(prev => prev + symbol + ' ')}
